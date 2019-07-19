@@ -1,0 +1,21 @@
+import java.util.Random;
+
+public class GamePairOrOdd {
+
+  public static void main(String[] args){
+
+    Random myRandom = new Random ();
+    int Round1 = myRandom.nextInt (6);
+    int Round2 = myRandom.nextInt (6);
+    
+    System.out.println("Player1 - Pair - " + Round1);
+    System.out.println("Player2 - Odd - " + Round2);
+    
+    if (((Round1 + Round2)%2) == 0){
+      System.out.println("Player1 Winner!");
+    }else{
+      System.out.println("Player2 Winner!");
+    
+    }
+  }
+}
